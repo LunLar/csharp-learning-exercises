@@ -40,22 +40,22 @@ class Calculator
                 break;
 
             case "/":
-                result = num1 / num2;
+                if (num2 != 0)
+                    result = num1 / num2;
+                else
+                {
+                    Console.WriteLine("Error:Cannot divide by zero!");
+                    validOperation = false;
+                }
                 break;
-                
+            default:
+                Console.WriteLine("Error:Invalid operation!");
+                validOperation = false;
+                break;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        if (validOperation)
+            Console.WriteLine($"Result: {num1} {operation} {num2} = {result}");
+        
     }
 }
