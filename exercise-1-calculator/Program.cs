@@ -1,5 +1,4 @@
 ﻿
-hello
 
 using System;
 
