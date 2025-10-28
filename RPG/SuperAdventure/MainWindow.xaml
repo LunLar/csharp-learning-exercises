@@ -1,0 +1,20 @@
+﻿<Window x:Class="SuperAdventure.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuperAdventure"
+        mc:Ignorable="d"
+        Title="MyGame" Height="690" Width="735">
+    <Grid>
+        <Label Content="Hit Points:" HorizontalAlignment="Left" Margin="18,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gold:" HorizontalAlignment="Left" Margin="18,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Experience:" HorizontalAlignment="Left" Margin="18,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="Level:" HorizontalAlignment="Left" Margin="18,100,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblHitPoints" Content="" HorizontalAlignment="Left" Margin="110,19,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblGold" Content="" HorizontalAlignment="Left" Margin="110,45,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblExperience" Content="" HorizontalAlignment="Left" Margin="110,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLevel" Content="" HorizontalAlignment="Left" Margin="110,99,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
