@@ -1,4 +1,6 @@
 ﻿
+string name = "Lars Henrik";
+string customerName;
 
 Console.WriteLine("The following items are available:\n" +
     "1 - Rope\n" +
@@ -12,19 +14,25 @@ Console.WriteLine("The following items are available:\n" +
 
 int choice = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine("What is your name");
+customerName = Console.ReadLine() ?? "";
 
-
-string response = choice switch
+int response = choice switch
 {
-    1 => "10 Gold",
-    2 => "16 Gold",
-    3 => "24 Gold",
-    4 => "2 Gold",
-    5 => "20 Gold",
-    6 => "200 Gold",
-    7 => "2 Gold",
-    _ => "Invalid choice",
+    1 => 10,
+    2 => 16,
+    3 => 24,
+    4 => 2,
+    5 => 20,
+    6 => 200,
+    7 => 2,
+    _ => -1
 };
 
 
-Console.WriteLine(response);
+if (response == -1)
+    Console.WriteLine("Invalid choice!");
+else if (customerName == name)
+    Console.WriteLine($"Price customer {customerName}: {response / 2} Gold (50% off)");
+else
+    Console.WriteLine($"Price customer {customerName}: {response} Gold (No discount)");
